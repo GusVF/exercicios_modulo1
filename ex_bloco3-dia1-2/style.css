@@ -1,0 +1,24 @@
+.body {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+  }
+
+  #estiloH1 {
+    size: 65px;
+    color: orange;
+    font-style: san-serif;
+  }
+  .paragrafo {
+    background-color: rgb(117, 142, 111);
+    font-weight: 300;
+    font-size: 2em;
+    font-style: inherit;
+
+  }
+  .lista {
+    background-color: rgb(155, 176, 194);
+    font-weight: 600;
+    font-size: 3em;
+    font-style: oblique;
+  }
