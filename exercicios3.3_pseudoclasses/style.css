@@ -1,0 +1,14 @@
+p, h1 {
+    text-align: center;
+}
+
+.ordenada:hover {
+    background-color:darkseagreen;
+}
+.ordenada:active {
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
