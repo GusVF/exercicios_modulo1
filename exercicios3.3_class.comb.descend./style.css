@@ -1,0 +1,60 @@
+
+ol {
+    background-color: yellow;
+    font-weight: 600;
+}
+.par  {
+    color: rgb(12, 94, 12);
+    
+}
+.impar {
+    text-transform: capitalize;
+   
+}
+
+h1 {
+    font-size: 40px;
+    border: 1px solid black;
+}
+    
+.red  {
+    color: red;
+}
+
+li {
+    font-size: 20px;
+}
+
+.fonteAzul {
+    color: blue;
+}
+
+.fundoRosa {
+    background-color: pink;
+}
+
+.aliados:hover {
+    font-weight: 600;
+}
+
+.stack:hover{
+    color:orange;
+}
+
+.webThree:hover{
+    color:rgb(25, 203, 25);
+}
+
+.mdnWeb:hover{
+    color:rgb(0, 0, 0);
+}
+
+.devDocs:hover{
+    color:rgb(182, 182, 35);
+}
+
+.trybe:hover{
+    color:darkgreen;
+}
+
+
