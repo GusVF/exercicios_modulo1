@@ -7,11 +7,12 @@ header {
     text-align: center;
     font-family: cursive;
     font-size: 30px;
-    border: 5px solid black;
+    border-bottom: 10px solid black;
+    margin-bottom: 2px;
 }
 
 .foto1{
-    height: 330px;
+    height: 350px;
     width: 55%;
     margin-bottom: 30px;
     margin-left: 30px;
@@ -32,12 +33,29 @@ aside {
 }
 
 .fatos {
-    margin-top: 80px;
+    margin-top: 65px;
     margin-left: 20px;
-    margin-right: 40%;
+    margin-right: 30%;
 }
 
+.fatos {
+    line-height:130%;
+    font-size:19px;
+}
 
+.fatos h2 {
+    text-align: center;
+}
 .fatos {
     border: 1px solid red;
+}
+
+strong {
+    color: red;
+}
+
+ .links  {
+    margin-top: 10%;
+    margin-left: 40%;
+    display: inline-block;
 }
