@@ -10,3 +10,9 @@ let info2 = {
     nota:'O último MacPatinhas' ,
     recorrente: 'Sim',
   };
+  console.log(info1.personagem + ' e ' + info2.personagem);
+  console.log(info1.origem + ' e ' + info2.origem);
+  console.log(info1.nota + ' e ' + info2.nota);
+  if(info1.recorrente === 'Sim' && info2.recorrente === "Sim"){
+    console.log('Ambos recorrentes');
+  }
