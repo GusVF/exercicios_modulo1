@@ -62,6 +62,7 @@
       let body = document.querySelector('body');
       let newH1 = document.createElement('h1');
       newH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      newH1.className = 'title';
       body.appendChild(newH1);
       console.log(newH1);
       //passo2
@@ -71,6 +72,7 @@
       console.log(newMain); 
       //passo3
       let section1 = document.createElement('section');
+      section1.style.backgroundColor = 'green';
       section1.className = 'center-content';
       newMain.appendChild(section1);
       console.log(section1) 
@@ -86,7 +88,7 @@
       console.log(section2);
       //passo6
       let section3 = document.createElement('section');
-      section3.className = 'right-content';
+      section3.className = 'right-content','margin-right:auto';
       newMain.appendChild(section3);
       console.log(section3);
       //passo7
@@ -96,20 +98,33 @@
       section2.appendChild(imagem);
       console.log(imagem);
       //passo8
-      
       let theUList = ['um', 'dois','tres', 'quatro', 'cinco', 'six', 'seven', 'eight', 'nine', 'ten'];
       for(let index in theUList){
-        let itemsList = theUList[index];
+      let itemsList = theUList[index];
       let list = document.createElement('li');
+      list.className = 'novaLista';
       list.innerText = itemsList;
       section3.appendChild(list);
       console.log(list);
       }
-
-
-
-
-
+      //passo9
+      let h3One = document.createElement('h3');
+      h3One.className = 'description';
+      newMain.appendChild(h3One);
+      console.log(h3One);
+      let h3Two = document.createElement('h3');
+      h3Two.className = 'description';
+      newMain.appendChild(h3Two);
+      console.log(h3Two);
+      let h3Three = document.createElement('h3');
+      h3Three.className = 'description';
+      newMain.appendChild(h3Three);
+      console.log(h3Three);
+      //item3 das alteracoes
+      newMain.removeChild(section2)
+      //item6 das alteracoes
+      
+      
     </script>
   </body>
 </html>
