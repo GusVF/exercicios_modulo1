@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      
+      //passo1
+      let body = document.querySelector('body');
+      let newH1 = document.createElement('h1');
+      newH1.innerText = 'Exercício 5.2 - JavaScript DOM';
+      body.appendChild(newH1);
+      console.log(newH1);
+      //passo2
+      let newMain = document.createElement('main');
+      newMain.className = 'main-content';
+      body.appendChild(newMain);
+      console.log(newMain); 
+      //passo3
+      let section1 = document.createElement('section');
+      section1.className = 'center-content';
+      newMain.appendChild(section1);
+      console.log(section1) 
+      //passo4
+      let parag1 = document.createElement('p');
+      parag1.innerText = "JavaScript is hard but it's fun!";
+      section1.appendChild(parag1);
+      console.log(parag1);
+      //passo5
+      let section2 = document.createElement('section');
+      section2.className = 'left-content';
+      newMain.appendChild(section2);
+      console.log(section2);
+      //passo6
+      let section3 = document.createElement('section');
+      section3.className = 'right-content';
+      newMain.appendChild(section3);
+      console.log(section3);
+      //passo7
+      let imagem = document.createElement('img');
+      imagem.src = 'https://picsum.photos/200';
+      imagem.className = 'small-image';
+      section2.appendChild(imagem);
+      console.log(imagem);
+      //passo8
+      
+      let theUList = ['um', 'dois','tres', 'quatro', 'cinco', 'six', 'seven', 'eight', 'nine', 'ten'];
+      for(let index in theUList){
+        let itemsList = theUList[index];
+      let list = document.createElement('li');
+      list.innerText = itemsList;
+      section3.appendChild(list);
+      console.log(list);
+      }
+
+
+
+
+
+    </script>
+  </body>
+</html>
