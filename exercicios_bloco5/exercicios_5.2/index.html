@@ -98,13 +98,16 @@
       section2.appendChild(imagem);
       console.log(imagem);
       //passo8
+      let elementUl = document.createElement('ul');
+      section3.appendChild(elementUl);
+      console.log(elementUl);
       let theUList = ['um', 'dois','tres', 'quatro', 'cinco', 'six', 'seven', 'eight', 'nine', 'ten'];
       for(let index in theUList){
       let itemsList = theUList[index];
       let list = document.createElement('li');
       list.className = 'novaLista';
       list.innerText = itemsList;
-      section3.appendChild(list);
+      elementUl.appendChild(list);
       console.log(list);
       }
       //passo9
@@ -123,7 +126,12 @@
       //item3 das alteracoes
       newMain.removeChild(section2)
       //item6 das alteracoes
-      
+      let ul = document.getElementsByTagName('ul')[0];
+      ul.lastChild.remove();
+      ul.lastChild.remove();
+
+
+
       
     </script>
   </body>
