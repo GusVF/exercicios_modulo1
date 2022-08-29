@@ -1,3 +1,5 @@
+<!-- arquivo index.html -->
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -42,24 +44,47 @@
       </section>
     </main>
     <script>
-        document.getElementsByTagName('p')[1].innerText = "Daqui 2 anos estarei trabalhando em um empresa Americana";
-       
-        document.getElementsByClassName('main-content')[0].style.backgroundColor = 'rgb(76,164,109)';
-        
-        document.getElementsByClassName('center-content')[0].style.backgroundColor = 'white';
-        
-        document.getElementsByTagName('h1')[0].innerText = 'Exercises 5.1 - JavaScript';
-        
-         
-        let paragrafos = document.getElementsByTagName('p'); 
-          for (let i = 0; i < paragrafos.length; i += 1){
-            paragrafos[i].innerText = paragrafos[i].innerText.toUpperCase();
-          }
+      //exercicio-1
+      function changeP1 () {
+         let p1 = document.getElementsByTagName('p')[1];
+         p1.innerHTML = 'trabalhar em uma empresa dos USA';
+      }
+         changeP1();
+      //exercicio-2
+      function yellowToGreen () {
+        let yToGreen = document.getElementsByClassName('main-content')[0];
+        yToGreen.style.backgroundColor = 'rgb(76,164,109)';
+      }
+         yellowToGreen();
+      //exercicio-3
+      function greenToWhite () {
+        let gToWhite = document.getElementsByTagName('section')[0];
+        gToWhite.style.backgroundColor = 'white';
+      }   
+         greenToWhite();
+      //exercicio-4
+      function changeH1 () {
+        let changeH1 = document.getElementsByClassName('title')[0];
+        changeH1.innerHTML = 'Exercício 5.1 - JavaScript';
+      }   
+         changeH1();
+      //exercicio-5
+      function textToUpper () {
+        let tToUpper = document.getElementsByClassName('center-content')[0];
+        tToUpper.innerText = tToUpper.innerText.toUpperCase();
+      }   
+        textToUpper();
+      //exercicio-6
+      function conteudoP () {
+        let frases = document.getElementsByTagName('section');
+        for (let index = 0; index < frases.length; index += 1) {
+          let conteudo = frases[index];
+          console.log(conteudo.innerText);
+        }
+        }
+        conteudoP();
 
-         console.log(document.getElementsByTagName('p'));
-
-
-        /*.
+        /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
         - document.getElementsByClassName()
