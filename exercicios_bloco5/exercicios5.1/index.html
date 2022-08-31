@@ -1,6 +1,5 @@
-<!-- arquivo index.html -->
 
-<!DOCTYPE html>
+      <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -44,45 +43,43 @@
       </section>
     </main>
     <script>
-      //exercicio-1
-      function changeP1 () {
-         let p1 = document.getElementsByTagName('p')[1];
-         p1.innerHTML = 'trabalhar em uma empresa dos USA';
-      }
-         changeP1();
-      //exercicio-2
-      function yellowToGreen () {
-        let yToGreen = document.getElementsByClassName('main-content')[0];
-        yToGreen.style.backgroundColor = 'rgb(76,164,109)';
-      }
-         yellowToGreen();
-      //exercicio-3
-      function greenToWhite () {
-        let gToWhite = document.getElementsByTagName('section')[0];
-        gToWhite.style.backgroundColor = 'white';
-      }   
-         greenToWhite();
-      //exercicio-4
-      function changeH1 () {
-        let changeH1 = document.getElementsByClassName('title')[0];
-        changeH1.innerHTML = 'Exercício 5.1 - JavaScript';
-      }   
-         changeH1();
-      //exercicio-5
-      function textToUpper () {
-        let tToUpper = document.getElementsByClassName('center-content')[0];
-        tToUpper.innerText = tToUpper.innerText.toUpperCase();
-      }   
-        textToUpper();
-      //exercicio-6
-      function conteudoP () {
-        let frases = document.getElementsByTagName('section');
-        for (let index = 0; index < frases.length; index += 1) {
-          let conteudo = frases[index];
-          console.log(conteudo.innerText);
+        //passo1
+        function twoYearPlan (frase) {
+           const twoYearPlan = document.getElementsByTagName('p')[1];
+           twoYearPlan.innerText = frase;
         }
+        twoYearPlan('Em dois anos vou estar trabalhando em uma empresa dos USA');
+        //passo2
+        function mainCont () {
+          const mainCont = document.getElementsByClassName('main-content')[0];
+          mainCont.style.backgroundColor = 'rgb(76,164,46)';
         }
-        conteudoP();
+        mainCont();
+        //passo3
+        function redToWhite (color) {
+          const redToWhite = document.getElementsByClassName('center-content')[0];
+          redToWhite.style.backgroundColor = color;
+         }
+         redToWhite('white');
+         //passo4
+        function h1Frase (frase) {
+          const h1Frase = document.getElementsByTagName('h1')[0];
+          h1Frase.innerText = frase;
+        } 
+        h1Frase('Exercício 5.1 - JavaScript');
+
+        function upperCase () {
+          const upperP = document.getElementsByClassName('center-content')[0];
+          upperP.innerText = upperP.innerText.toUpperCase();
+        }
+        upperCase();
+
+        function phraseConsole () {
+          const phraseConsole = document.querySelectorAll('.center-content')[0];
+          console.log(phraseConsole.innerText);
+        }
+        phraseConsole();
+
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
