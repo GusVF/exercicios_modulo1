@@ -61,6 +61,7 @@ label {
 #idea {
   font-family: cursive ;
   border-radius: 5px;
+  font-size: 20px;
 }
 
 #idea {
@@ -92,7 +93,7 @@ button {
 <body>
     <main>
     <form action="" method="post" enctype="multipart/form-data">
-    <p id="p1">A escola Trybe esta presenteando uma viajem com todas a despesas pagas para o aluno que escrever a melhor ideia de startup.🚀</p>
+    <p id="p1">A escola Trybe esta presenteando uma viajem com todas a despesas pagas para o aluno que escrever a melhor ideia de Startup.🚀</p>
     <label for="nome">nome completo:</label>
     <input type="text" class="nome" name="nome" required><br><br>
 
@@ -111,9 +112,8 @@ button {
     
     <input type="radio" name="viajem" id="roma">
     <label for="roma">Roma</label><br><br><br>
-
-    <p>Escreva aqui a sua fantastica ideia de startup!</p>
-    <textarea name="idea" id="idea" cols="100" rows="20" required></textarea><br><br>
+    <!-- area de inserir ideia. -->
+    <textarea name="idea" id="idea" cols="80" rows="10" required maxlength="10" placeholder="Escreva aqui a sua fantastica ideia de Startup!"></textarea><br><br>
    
     <label for="data">data da viajem dos sonhos</label>
     <input type="date" name="date" id="data"><br><br>
@@ -131,5 +131,4 @@ button {
     <footer>
       <img src="CAPA LINKEDIN_PERFIL PESSOAL03 (3).png" alt="Logo da escola Trybe" class="footer">
     </footer>
-
 </body>
