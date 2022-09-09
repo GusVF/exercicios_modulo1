@@ -1,143 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
-  .header {
-    display: flex;
-    justify-content:space-around;
-    align-items: center;
-    background-color: black;
-    color: rgb(198, 195, 190);
-  }
-  .header-img {
-    width: 70px;
-  
-  }
-  
-  #sign-up {
-    text-decoration: underline;
-  }
-  
-  p {
-    display: flex;
-    justify-content: center;
-    font-size: 25px;
-  }
-  
-  
-  .gallery-img {
-    width: 150px;
-  }
-  
-  .tech {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    margin-top: 25px;
-  }
-  
-  .html {
-    padding-top: 10px;
-    height: 200px;
-    width: 160px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .css {
-    padding-top: 10px;
-    height: 200px;
-    width: 160px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .js {
-    height: 200px;
-    width: 160px;
-    padding-top: 10px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .tech2 {
-    display: flex;
-    align-items: stretch;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  
-  .react {
-    height: 200px;
-    width: 160px;
-    padding-top: 10px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .rtl {
-    height: 200px;
-    width: 160px;
-    padding-top: 10px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .redux {
-    height: 200px;
-    width: 160px;
-    padding-top: 10px;
-    background-color:rgb(238, 243, 243);
-    border-radius: 10px;
-    display: flex;
-    flex-direction:column ;
-    align-items: center;
-    box-shadow: 1px 4px 6px 1px lightgray;
-  }
-  
-  .footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  hr {
-    margin-left: 44%;
-    margin-right: 44%;
-    margin-top: 20px;
-  }
-  
-  .social-img {
-    width: 25px;
-    margin-left: 10px;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu';
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: lightgray;
+  background-color: black;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.header-img {
+  width: 70px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items:stretch;
+  align-content: center;
+  margin: 20px 400px ;
+}
+
+.gallery-img{
+  padding: 15px;
+}
+
+.container  div{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color:rgb(225, 239, 239);
+  box-shadow: 1px 3px 3px 1px lightgrey;
+}
+
+.container h4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+hr {
+  margin-left: 44%;
+  margin-right: 44%;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 150px;
+}
+
+.social-img {
+  width: 25px;
+  margin-left: 10px;
+}
