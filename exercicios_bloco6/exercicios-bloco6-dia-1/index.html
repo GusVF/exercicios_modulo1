@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Forms</title>
+  <style>
+  * {
+    margin: 0;
+    padding: auto;
+  }
+body {
+    background-color: rgb(216, 230, 231);
+}
+
+header {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+h1 {
+  text-align: center;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 60px;
+}
+
+main {
+  border: 1px solid rgb(73, 182, 168);
+  margin-left: 60px;
+  margin-right: 60px;
+  padding: 20px 40px;
+  background-color: rgb(190, 240, 236);
+  border-radius: 4px;
+}
+
+p {
+  font-family: fantasy;
+}
+
+#p1 {
+  font-size: 20px;
+}
+
+input {
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+  font-family: fantasy;
+}
+
+.nome {
+    width: 20%;
+}
+
+.email {
+    width: 20%;
+} 
+
+#idea {
+  font-family: cursive ;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+#idea {
+  background-color: rgb(222, 247, 244);
+}
+
+#btsubmit {
+    margin-left: 25%;
+    margin-right: 15px;
+    margin-top: 30px;
+}
+
+button {
+    cursor: pointer;
+}
+
+.footer {
+  height: 150px;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: -5px;
+}
+  </style>
+</head>
+ <header>
+    <h1>Trybe trip</h1>
+    
+</header>
+<body>
+    <main>
+    <form action="" method="post" enctype="multipart/form-data">
+    <p id="p1">A escola Trybe esta presenteando uma viajem com todas a despesas pagas para o aluno que escrever a melhor ideia de Startup.🚀</p>
+    <label for="nome">nome completo:</label>
+    <input type="text" class="nome" name="nome" required><br><br>
+
+    <label for="email">Seu e-mail aqui:</label>
+    <input type="email" class="email" required><br><br>
+
+    <p>Escolha o destino da sua Viajem espetacular!</p><br>
+    <input type="radio" name="viajem" id="cancun">
+    <label for="cancun">Cancun</label>
+    
+    <input type="radio" name="viajem" id="costaRica">
+    <label for="costaRica">CostaRica</label>
+    
+    <input type="radio" name="viajem" id="hawaii">
+    <label for="hawaii">Hawaii</label>
+    
+    <input type="radio" name="viajem" id="roma">
+    <label for="roma">Roma</label><br><br><br>
+    <!-- area de inserir ideia. -->
+    <textarea name="idea" id="idea" cols="80" rows="10" required maxlength="10" placeholder="Escreva aqui a sua fantastica ideia de Startup!"></textarea><br><br>
+   
+    <label for="data">data da viajem dos sonhos</label>
+    <input type="date" name="date" id="data"><br><br>
+
+    <label for="box1">Concordo com os termos do sorteio.👉</label>
+    <input type="checkbox" name="termos" id="box1" required><br><br>
+
+    <label for="box2">Concordo com as regras da viajem.👉</label>
+    <input type="checkbox" name="termos" id="box2" required><br>
+
+    <button type="submit" id="btsubmit" name="button">submit</button>
+    <button type="reset" id="btreset" name="button">reset</button>
+    </form>
+  </main>
+    <footer>
+      <img src="CAPA LINKEDIN_PERFIL PESSOAL03 (3).png" alt="Logo da escola Trybe" class="footer">
+    </footer>
+</body>
