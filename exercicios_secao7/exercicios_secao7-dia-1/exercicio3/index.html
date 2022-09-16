@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-3-seção-7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header><h1>Exercicio-3 Seção 7</h1></header>
+<body>
+   <!-- botao e input criado -->
+  <div class="inputBtn">
+    <button type="submit" id="button">click aqui!</button>
+    <input type="text" id="input">
+  </div>
+    <script>
+      let clickCount = 0;
+      const button = document.getElementById('button');
+      const input = document.getElementById('input');
+
+      // funcao que conta os clicks do botao e adiciona a variavel 'clickCount'
+      button.addEventListener('click', (event) => {
+       event.preventDefault();
+       clickCount += 1;
+       input.value = clickCount;
+       // localStorge criada para fins de exercicio.
+      //  localStorage.setItem('contagem', JSON.stringify(input.value));
+       })
+
+    </script>
+</body>
+</html>
