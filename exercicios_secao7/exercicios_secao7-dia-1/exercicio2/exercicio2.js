@@ -1,4 +1,5 @@
-
+// Crie uma função que receba uma frase como parâmetro e retorne a maior palavra contida nesta frase.
+// longestWord('Antônio foi ao banheiro e não sabemos o que aconteceu') // retorna 'aconteceu'
 
 const PickBigWord = (longestWord) => {
   const wordArray = longestWord.split(' ');
