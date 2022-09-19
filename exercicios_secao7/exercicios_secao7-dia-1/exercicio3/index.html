@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio-3-seção-7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header><h1>Exercicio-3 Seção 7</h1></header>
+<body>
+   <!-- botao e input criado -->
+  <div class="inputBtn">
+    <button type="submit" id="button">click aqui!</button>
+    <input type="text" id="input">
+  </div>
+   <!-- JavaScript com a funcao e DOM criados -->
+    <script>
+      let clickCount = 0;
+      const button = document.getElementById('button');
+      const input = document.getElementById('input');
+
+      // funcao que conta os clicks do botao e adiciona a variavel 'clickCount'
+      button.addEventListener('click', (event) => {
+       event.preventDefault();
+       clickCount += 1;
+       input.value = clickCount;
+       // localStorge criada para fins de exercicio.
+      //  localStorage.setItem('contagem', JSON.stringify(input.value));
+       })
+
+    </script>
+</body>
+</html>
+<!-- Crie uma página HTML que possua um contador de cliques.
+Além da estrutura básica do HTML, sua página deve possuir:
+Uma tag que receberá o valor atualizado da quantidade de clicks do botão.
+Um botão com o texto click aqui!, que receberá um event listener do tipo click;
+Na estrutura do script (dentro do HTML ou em um arquivo de JavaScript ):
+Crie uma variável clickCount que irá acumular o número de clicks do botão;
+Crie a lógica do evento, para que a cada click no botão, a variável seja atualizada com acréscimo de valor 1. Exemplo: Caso não tenha sido realizado nenhum click, o valor renderizado será de 0. Caso o botão seja clicado 5 vezes o valor renderizado no HTML será de 5.
+Dica: Nesse exercício utilize document. getElementById para retornar o elemento do DOM que deseja.
+ -->
