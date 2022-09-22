@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1663687732896" clover="3.2.0">
+  <project timestamp="1663687732896" name="All files">
+    <metrics statements="17" coveredstatements="17" conditionals="16" coveredconditionals="16" methods="3" coveredmethods="3" elements="36" coveredelements="36" complexity="0" loc="17" ncloc="17" packages="3" files="3" classes="3"/>
+    <package name="SumFunction">
+      <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="sum.js" path="/Users/luizferreira/Desktop/exercicios_modulo1/exercicios_secao7/exercicios_secao7-dia3/SumFunction/sum.js">
+        <metrics statements="5" coveredstatements="5" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="fizzBuzz">
+      <metrics statements="6" coveredstatements="6" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+      <file name="fizzBuzz.js" path="/Users/luizferreira/Desktop/exercicios_modulo1/exercicios_secao7/exercicios_secao7-dia3/fizzBuzz/fizzBuzz.js">
+        <metrics statements="6" coveredstatements="6" conditionals="10" coveredconditionals="10" methods="1" coveredmethods="1"/>
+        <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="myRemove">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <file name="myRemove.js" path="/Users/luizferreira/Desktop/exercicios_modulo1/exercicios_secao7/exercicios_secao7-dia3/myRemove/myRemove.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="12" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="10" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
