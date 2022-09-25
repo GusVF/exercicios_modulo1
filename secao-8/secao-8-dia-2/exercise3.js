@@ -61,7 +61,16 @@ const books = [
     },
   ];
   
-  function authorBornIn1947() {
-    return books.find((name) => name.author.birthYear === 1947).author.name;
+  // Adicione o código do exercício aqui:
+
+// Encontre o primeiro livro cujo nome possui 26 caracteres.
+  function getNamedBook() {
+    let bookName; 
+    books.forEach((book) => {
+        if (!bookName || book.name.length === 26) {
+            bookName = book.name;
+        }
+    })
+    return bookName;
   }
-  console.log(authorBornIn1947());
+  console.log(getNamedBook());
