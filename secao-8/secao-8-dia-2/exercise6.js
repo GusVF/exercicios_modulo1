@@ -48,3 +48,4 @@ function someBookWasReleaseOnThe80s() {
   return expectedResult.some((bookYear) => bookYear.releaseYear >= 1980 && bookYear.releaseYear < 1990);
 }
 console.log(someBookWasReleaseOnThe80s());
+module.exports = someBookWasReleaseOnThe80s;

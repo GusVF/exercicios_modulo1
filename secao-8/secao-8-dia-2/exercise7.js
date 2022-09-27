@@ -51,3 +51,4 @@ function authorUnique() {
 }
 
 console.log(authorUnique());
+module.exports = authorUnique;

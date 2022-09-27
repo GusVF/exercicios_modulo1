@@ -74,3 +74,4 @@ const books = [
     return bookName;
   }
   console.log(getNamedBook());
+  module.exports= getNamedBook;

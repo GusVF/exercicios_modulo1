@@ -72,4 +72,4 @@ const books = [
     return nameBook;
   }
 console.log(smallerName());
-
+module.exports = smallerName;

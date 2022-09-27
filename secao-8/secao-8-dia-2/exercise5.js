@@ -46,7 +46,8 @@ const expectedResult = [
 //   Faça uma função que retorne true, se todas as pessoas autoras nasceram no século XX, ou false, caso contrário.
 
 
-function everyoneWasBornOnSecXX() {
+function bornInThe1900s() {
  return expectedResult.every((person) => person.author.birthYear > 1900);
 }
-console.log(everyoneWasBornOnSecXX());
+console.log(bornInThe1900s());
+module.exports = bornInThe1900s;

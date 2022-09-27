@@ -6,3 +6,4 @@ const findDivisibleBy3And5 = () => numbers.find((number) => number % 3 === 0 && 
 
 console.log(findDivisibleBy3And5());
 
+module.exports = findDivisibleBy3And5;

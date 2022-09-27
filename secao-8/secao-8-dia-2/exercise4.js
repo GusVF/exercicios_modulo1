@@ -48,3 +48,4 @@ const expectedResult = [
    return bookYear;
   }
   console.log(booksOrderedByReleaseYearDesc(expectedResult));
+  module.exports = booksOrderedByReleaseYearDesc;

@@ -60,8 +60,9 @@ const books = [
       releaseYear: 1928,
     },
   ];
-  
+  // Return the author name born in 1947.
   function authorBornIn1947() {
     return books.find((name) => name.author.birthYear === 1947).author.name;
   }
   console.log(authorBornIn1947());
+module.exports = authorBornIn1947;
