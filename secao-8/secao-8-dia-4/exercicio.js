@@ -79,3 +79,6 @@ const report = estudantes.map((estudante) => ({
    .reduce((acc, materia) => acc.name > materia.nota ? acc : materia).name
 }))
 console.log(report);
+
+module.exports = report;
+
